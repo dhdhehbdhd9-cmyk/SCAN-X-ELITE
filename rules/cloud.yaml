@@ -1,0 +1,26 @@
+rules:
+- id: aws-access-key
+  name: AWS Access Key ID
+  category: cloud
+  severity: high
+  confidence: high
+  pattern: \bAKIA[0-9A-Z]{16}\b
+  keywords:
+  - akia
+- id: aws-secret-key
+  name: AWS Secret Access Key assignment
+  category: cloud
+  severity: critical
+  confidence: medium
+  pattern: (?:aws_secret_access_key|aws_secret|secret_key)\s*[:=]\s*["\']?[A-Za-z0-9/+=]{40}
+  keywords:
+  - secret
+  - aws
+- id: google-api-key
+  name: Google API Key
+  category: cloud
+  severity: high
+  confidence: high
+  pattern: \bAIza[0-9A-Za-z_-]{35}\b
+  keywords:
+  - AIza

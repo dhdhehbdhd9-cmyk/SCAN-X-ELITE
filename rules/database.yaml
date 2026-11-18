@@ -1,0 +1,22 @@
+rules:
+- id: database-connection-string
+  name: Database Connection String
+  category: database
+  severity: high
+  confidence: high
+  pattern: \b(?:postgres(?:ql)?|mysql|mongodb(?:\+srv)?|redis)://[^\s\"\']{8,}
+  keywords:
+  - postgres
+  - mysql
+  - mongodb
+  - redis
+- id: password-assignment
+  name: Password Assignment
+  category: credentials
+  severity: high
+  confidence: medium
+  pattern: \b(?:password|passwd|pwd)\s*[:=]\s*["\'][^"\'\n]{8,}["\']
+  keywords:
+  - password
+  - passwd
+  - pwd

@@ -1,0 +1,19 @@
+rules:
+- id: private-key
+  name: Private Key Material
+  category: cryptographic
+  severity: critical
+  confidence: high
+  pattern: '-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----'
+  keywords:
+  - private key
+- id: ethereum-private-key
+  name: Blockchain Private Key
+  category: blockchain
+  severity: critical
+  confidence: medium
+  pattern: (?:private_key|privatekey|wallet_key)\s*[:=]\s*["\']?0x[a-f0-9]{64}\b
+  keywords:
+  - private
+  - wallet
+  - 0x

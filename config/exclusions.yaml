@@ -1,0 +1,2 @@
+exclude_paths: []
+exclude_extensions: [.png, .jpg, .jpeg, .gif, .webp, .mp4, .mp3, .pyc, .o, .so]

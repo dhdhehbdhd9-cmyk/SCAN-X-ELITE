@@ -1,0 +1,24 @@
+test_default_security_settings (test_foundation.FoundationTests.test_default_security_settings) ... ok
+test_fingerprint_is_deterministic_with_same_salt (test_foundation.FoundationTests.test_fingerprint_is_deterministic_with_same_salt) ... ok
+test_github_url_name (test_foundation.FoundationTests.test_github_url_name) ... ok
+test_html_escaping (test_foundation.FoundationTests.test_html_escaping) ... ok
+test_path_traversal_rejected (test_foundation.FoundationTests.test_path_traversal_rejected) ... ok
+test_prepare_local_directory (test_foundation.FoundationTests.test_prepare_local_directory) ... ok
+test_redaction (test_foundation.FoundationTests.test_redaction) ... ok
+test_reject_missing_directory (test_foundation.FoundationTests.test_reject_missing_directory) ... ok
+test_reject_secret_persistence_config (test_foundation.FoundationTests.test_reject_secret_persistence_config) ... ok
+test_archive_scan_without_extraction (test_phase2.Phase2Tests.test_archive_scan_without_extraction) ... ok
+test_excluded_directory_and_binary (test_phase2.Phase2Tests.test_excluded_directory_and_binary) ... ok
+test_no_network_for_github (test_phase2.Phase2Tests.test_no_network_for_github) ... ok
+test_pattern_detection_is_redacted (test_phase2.Phase2Tests.test_pattern_detection_is_redacted) ... ok
+test_rules_load (test_phase2.Phase2Tests.test_rules_load) ... ok
+test_bad_telegram_yaml_is_ignored (test_phase3.Phase3Tests.test_bad_telegram_yaml_is_ignored) ... ok
+test_history_finding_has_real_line_number (test_phase3.Phase3Tests.test_history_finding_has_real_line_number) ... ok
+test_missing_git_is_reported (test_phase3.Phase3Tests.test_missing_git_is_reported) ... ok
+test_patterns_can_be_disabled (test_phase3.Phase3Tests.test_patterns_can_be_disabled) ... ok
+test_telegram_report_sanitizes_newlines (test_phase3.Phase3Tests.test_telegram_report_sanitizes_newlines) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.440s
+
+OK

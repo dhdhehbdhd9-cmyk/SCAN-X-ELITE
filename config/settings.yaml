@@ -1,0 +1,37 @@
+app:
+  name: SCAN-X ELITE
+  version: "0.2.0"
+  language: en
+scan:
+  scope: secrets
+  git_history: complete
+  max_file_size_mb: 25
+  max_files: 100000
+  max_depth: 50
+  read_chunk_size: 65536
+  follow_symlinks: false
+  scan_archives: false
+  archive_max_depth: 3
+  archive_max_files: 2000
+  archive_max_file_size_mb: 10
+  archive_max_total_mb: 100
+  excluded_directories: [.git, node_modules, __pycache__, .venv, venv, build, dist]
+  git_history_max_commits: 500
+  git_history_timeout_seconds: 120
+security:
+  redact_terminal_by_default: true
+  redact_reports: true
+  persist_secret_values: false
+  network_validation: false
+engines:
+  patterns: true
+  gitleaks: true
+  archives: false
+  git_history: true
+  gitleaks_timeout_seconds: 120
+github:
+  enabled: true
+  clone_timeout_seconds: 180
+reports:
+  formats: [html, json]
+  output_dir: output/reports

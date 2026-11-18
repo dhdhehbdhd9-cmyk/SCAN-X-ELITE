@@ -1,0 +1,36 @@
+rules:
+  - id: github-token
+    name: GitHub Personal Access Token
+    category: developer
+    severity: high
+    confidence: high
+    pattern: '\bgh[pousr]_[A-Za-z0-9_]{20,}\b'
+    keywords: [ghp_, gho_, ghu_, ghs_, ghr_]
+  - id: gitlab-token
+    name: GitLab Token
+    category: developer
+    severity: high
+    confidence: medium
+    pattern: '\bglpat-[A-Za-z0-9_-]{20,}\b'
+    keywords: [glpat-]
+  - id: slack-token
+    name: Slack Token
+    category: developer
+    severity: high
+    confidence: high
+    pattern: '\bxox[baprs]-[0-9A-Za-z-]{10,}\b'
+    keywords: [xox]
+  - id: discord-token
+    name: Discord Token
+    category: developer
+    severity: high
+    confidence: medium
+    pattern: '\b[A-Za-z0-9_-]{20,28}\.[A-Za-z0-9_-]{5,8}\.[A-Za-z0-9_-]{20,50}\b'
+    keywords: [token, discord]
+  - id: stripe-secret
+    name: Stripe Secret Key
+    category: payment
+    severity: critical
+    confidence: high
+    pattern: '\bsk_(?:live|test)_[0-9A-Za-z]{16,}\b'
+    keywords: [sk_live_, sk_test_]
